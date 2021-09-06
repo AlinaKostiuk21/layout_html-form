@@ -11,7 +11,164 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
+    <form
+      action=""
+      id="form_info"
+      method="POST"
+    >
+      <fieldset class="block">
+        <legend>Personal information</legend>
+        <label class="form-field" for="form_info__input_surname">
+          Surname:
+          <input
+            type="text"
+            name="surname"
+            id="form_info__input_surname"
+            required
+          >
+        </label>
+        <label class="form-field" for="form_info__input_name">
+          Name:
+          <input
+            type="text"
+            name="name"
+            id="form_info__input_name"
+            required
+          >
+        </label>
+        <label class="form-field" for="form_info__input_age">
+          How old are You?
+          <input
+            type="number"
+            name="age"
+            id="form_info__input_age"
+            min="12"
+            max="100"
+            value="12"
+          >
+        </label>
+        <label class="form-field" for="form_info__input_date">
+          Full date of birth:
+          <input type="date"
+            name="date"
+            id="form_info__input_date"
+          >
+        </label>
+        <label class="form-field" for="form_info__input_agreement">
+          I accept the term of the agreement
+          <input
+            type="checkbox"
+            name="accept"
+            id="form_info__input_agreement"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>Registration</legend>
+        <label class="form-field" for="form_info__input_email">
+          E-mail:
+          <input
+            type="email"
+            name="email"
+            id="form_info__input_email"
+            placeholder="email@example.com"
+            required
+          >
+        </label>
+        <label class="form-field" for="form_info__input_password">
+          Password:
+          <input
+            type="password"
+            name="password"
+            id="form_info__input_password"
+            minlength="6"
+            maxlength="32"
+            required
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>An interesting fact about you!</legend>
+        <div class="form-field">
+          Do you love cats?
+          <label for="form_info__input_cats_yes">
+            <input
+              type="radio"
+              name="love-cats"
+              id="form_info__input_cats_yes"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label for="form_info__input_cats_no">
+            <input
+              type="radio"
+              name="love-cats"
+              id="form_info__input_cats_no"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <label class="form-field" for="form_info__input_color">
+          What is your favorite color?
+          <input
+            type="color"
+            name="favorite-color"
+            id="form_info__input_color"
+          >
+        </label>
+        <label class="form-field" for="form_info__input_time">
+          What time do you go to bed?
+          <input
+            type="time"
+            name="time-to-bed"
+            id="form_info__input_time"
+          >
+        </label>
+        <label class="form-field" for="form_info__input_car">
+          What are your favorite brand of cars?
+          <select
+            name="brand-of-car"
+            id="form_info__input_car"
+            multiple
+          >
+            <option value="bmv">BMV</option>
+            <option value="audi">Audi</option>
+            <option value="lada">Lada</option>
+          </select>
+        </label>
+        <label class="form-field" for="form_info__input_work">
+          How do you rate our work?
+          <input
+            type="range"
+            name="rate-work"
+            id="form_info__input_work"
+            value="0"
+          >
+        </label>
+      </fieldset>
+
+      <fieldset class="block">
+        <legend>Additional info</legend>
+        <label class="form-field" for="form_info__input_comments">
+          Comments:
+          <textarea name="comments" id="form_info__input_comments"></textarea>
+        </label>
+        <label class="form-field" for="form_info__input_recommend">
+          Would you recommend us?
+          <select name="recommend" id="form_info__input_recommend">
+            <option value="yes">yes</option>
+            <option value="no">no</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <button type="submit">Submit</button>
+    </form>
   </body>
 </html>
