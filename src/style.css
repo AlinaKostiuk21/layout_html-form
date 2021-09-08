@@ -4,9 +4,9 @@
 }
 
 .block {
-  margin: 10px 0 20px;
+  margin-bottom: 20px;
 }
 
-.block .form-field:last-child {
+.form-field:last-child {
   margin-bottom: 0;
 }
